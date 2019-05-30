@@ -12,7 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',[
+        'foo' => 'Arsad',
+        'tasks' => [
+            'Learn Laravel',
+            'Clear assignment company',
+            'Complete freelance semi-funcsion'
+        ]
+    ]);
 });
 
 Route::get('/contact',function(){
