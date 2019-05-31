@@ -10,18 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'projectController@home');
 
-Route::get('/', function () {
-    return view('welcome',[
-        'foo' => 'Arsad',
-        'tasks' => [
-            'Learn Laravel',
-            'Clear assignment company',
-            'Complete freelance semi-funcsion'
-        ]
-    ]);
-});
-
-Route::get('/contact',function(){
-    return view('contact');
-});
+Route::get('/contact', 'projectController@contact');
