@@ -14,6 +14,7 @@
     <ul>
         <li><a href="/">Home</a>
         <li><a href="/contact">Contact Us</a>
+        <li><a href="/projects">Projects</a>
     </ul>
     
 
