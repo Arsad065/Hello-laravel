@@ -11,11 +11,16 @@
 |
 */
 Route::get('/', 'pagesController@home');
-
 Route::get('/contact', 'pagesController@contact');
 
-Route::get('/projects', 'projectsController@index');
+/**
+ * 
+ */
+Route::resource('/projects','projectsController');
 
-Route::post('/projects', 'projectsController@store');
-
-Route::get('/projects/create', 'projectsController@create');
+// Route::get('/projects', 'projectsController@index');
+// Route::post('/projects', 'projectsController@store');
+// Route::get ('/projects/{project}', 'projectsController@show');
+// Route::get('/projects/{project}/edit', 'projectsController@edit');
+// Route::patch('/projects', 'projectsController@update');
+// Route::get('/projects/create', 'projectsController@create');
